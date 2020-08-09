@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Facebook shares store</title>
+</head>
+<body>
+<table>
+    <tbody>
+        <tr>
+            <td>Balance: <span id="usd">0</span> $</td>
+            <td>
+                <input id="buy-amount" type="text" placeholder="Amount of facebook shares">
+                <button id="buy" class="btns">Buy</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Facebook shares: <span id="facebook">0</span></td>
+            <td>
+                <input id="sell-amount" type="text" placeholder="Amount of facebook shares">
+                <button id="sell" class="btns">Sell</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="container" style="width: 900px;height: 400px;">
+    <canvas id="rate" width="900" height="400"></canvas>
+</div>
+<div class="container">
+    <div class="info" style="display: flex">
+        <ul class="buy">
+            <h3>buy history:</h3>
+        </ul>
+        <ul class="sell">
+            <h3>sell history:</h3>
+        </ul>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
